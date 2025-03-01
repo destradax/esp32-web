@@ -9,6 +9,16 @@ fieldset {
   max-width: 400px;
 }
 
+.labeledInput {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.labeledInput input {
+  flex: 1;
+}
+
 button {
   color: white;
   flex: 1;
