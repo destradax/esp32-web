@@ -1,12 +1,14 @@
 import './style.css';
 
-const turnOnButton = document.getElementById('btnTurnOn');
-const turnOffButton = document.getElementById('btnTurnOff');
+const pinInput = document.getElementById('pinInput');
+const btnTurnOn = document.getElementById('btnTurnOn');
+const btnTurnOff = document.getElementById('btnTurnOff');
 
-turnOnButton.onclick = () => {
-  fetch('/turnOn');
-  
+btnTurnOn.onclick = () => {
+  const pin = pinInput.value;
+  fetch(`/turnOn?pin=${pin}`);
 };
-turnOffButton.onclick = () => {
-  fetch('/turnOff');
+btnTurnOff.onclick = () => {
+  const pin = pinInput.value;
+  fetch(`/turnOff?pin=${pin}`);
 };

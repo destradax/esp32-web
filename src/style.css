@@ -2,13 +2,23 @@ body {
   text-align: center;
 }
 
-.buttons {
+fieldset {
   display: flex;
-  justify-content: stretch;
+  flex-direction: column;
   gap: 24px;
+  max-width: 400px;
 }
 
-.buttons button {
+button {
+  color: white;
   flex: 1;
-  padding: 2em 0;
+  padding: 1em 0;
+}
+
+#btnTurnOn {
+  background-color: green;
+}
+
+#btnTurnOff {
+  background-color: red;
 }

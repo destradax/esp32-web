@@ -7,11 +7,18 @@
   </head>
   <body>
     <div id="app">
-      <h1>Blink</h1>
-      <div class="buttons">
+      <h1>MVF</h1>
+      <fieldset>
+        <legend>Pin Controller</legend>
+
+        <label>
+          Pin:
+          <input id="pinInput" type="number" inputmode="numeric" />
+        </label>
+
         <button id="btnTurnOn">Turn ON</button>
         <button id="btnTurnOff">Turn OFF</button>
-      </div>
+      </fieldset>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
